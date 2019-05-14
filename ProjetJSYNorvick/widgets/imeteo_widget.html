@@ -1,0 +1,34 @@
+<div id="iMeteo_widget" class="boite">
+  <div class="contents">
+    <h1>Météo<button class="close_widget" onclick="$('#iMeteo_widget').remove();">X</button></h1>
+    <p> <input id="queryLoc" type="text" value="" placeholder="Recherchez" />
+      <input type="button" value="Donnez la température " onclick="buttonClickGET()" />
+      <a id="zone_meteo"></a>
+      <script>
+        var callBackGetSuccess = function(data) {
+          console.log("donnees api", data)
+          var temperature = document.getElementById("zone_meteo");
+
+          temperature.innerHTML = "La temperature est de " + data.main.temp + "°C";
+        }
+
+        function buttonClickGET() {
+
+          var queryLoc = document.getElementById("queryLoc").value;
+          var url = "https://api.openweathermap.org/data/2.5/weather?q=" + queryLoc + "&appid=c21a75b667d6f7abb81f118dcf8d4611&units=metric"
+
+          $.get(url, callBackGetSuccess).done(function() {
+
+            })
+            .fail(function() {
+
+              alert("error");
+            })
+            .always(function() {
+
+            });
+        }
+      </script>
+    </p>
+  </div>
+</div>

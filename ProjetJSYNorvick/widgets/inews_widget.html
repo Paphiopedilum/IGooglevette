@@ -1,0 +1,28 @@
+<div id="iNews_widget" class="boite">
+  <div class="contents">
+    <h1>News <button class="close_widget" onclick="$('#iNews_widget').remove();">X</button></h1>
+    <p>
+      <script>
+        $(document).ready(function() {
+
+          $.ajax({
+
+            url: "https://newsapi.org/v2/top-headlines?country=fr&apiKey=0d97f02cb66041aca2b18496ede78f37",
+          }).done(function(data) {
+
+            console.log(data);
+
+            for (var i = 0; i < 3; i++) {
+
+              $('.boite p').append(
+                `<h3>Titre:${data.articles[i].title}</h3>
+                <h3>Description:${data.articles[i].description}</h3>
+                <br/>`
+              );
+            }
+          });
+        });
+      </script>
+    </p>
+  </div>
+</div>

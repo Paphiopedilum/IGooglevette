@@ -1,0 +1,74 @@
+body {
+  background-color: #E07057;
+  background-image: url(image/zoizeau.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+#navbar {
+  background-color: #000;
+}
+
+#icons {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#icons li {
+  display: inline;
+  list-style: none;
+}
+
+#icons a {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+.svg-icon {
+  width: 3em;
+  height: 3em;
+}
+
+.svg-icon path {
+  fill: #FFF;
+}
+
+.boite {
+  width: 20%;
+}
+
+.boite h1 {
+  background-color: #CD4512;
+  height: 120%;
+  font-size: 2em;
+  margin: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.boite p {
+  background-color: #C48773;
+  height: 120%;
+  font-size: 1.5em;
+  border-radius: 0 0 10px 10px;
+}
+
+.contents button {
+  background: #CD4512;
+  width: 15%;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  float: right;
+}
+
+option {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}

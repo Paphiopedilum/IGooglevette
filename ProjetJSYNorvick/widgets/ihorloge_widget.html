@@ -1,0 +1,25 @@
+<div id="iHorloge_widget" class="boite">
+  <div class="contents">
+    <h1>Horloge :<button class="close_widget" onclick="$('#iHorloge_widget').remove();">X</button></h1>
+    <p>
+      <a>Nous sommes le :</a>
+      <a id="jour">
+        <script type="text/javascript">
+          setInterval(function() {
+
+            document.getElementById('jour').innerHTML = new Date().toLocaleDateString();
+          }, 1000);
+        </script>
+      </a><br>
+      <a>Il est exactement :</a>
+      <a id="heure">
+        <script type="text/javascript">
+          setInterval(function() {
+
+            document.getElementById('heure').innerHTML = new Date().toLocaleTimeString();
+          }, 1000);
+        </script>
+      </a>
+    </p>
+  </div>
+</div>

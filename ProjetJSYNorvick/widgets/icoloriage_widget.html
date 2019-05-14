@@ -1,0 +1,40 @@
+<div id="iColoriage_widget" class="boite">
+  <div class="contents">
+    <h1>Colore tous tes widgets ! <button class="close_widget" onclick="$('#iColoriage_widget').remove();">X</button></h1>
+    <p>
+      <input type="button" value="Tourterelle" onclick="tourterelle()">
+      <input type="button" value="Oeufs de Rouge-gorge" onclick="rougegorge()">
+      <input type="button" value="Verdier" onclick="verdier()">
+      <input type="button" value="Serin" onclick="serin()">
+      <script>
+        function tourterelle() {
+
+          $(".boite h1").css("background-color", "#8F8F87");
+          $(".boite p").css("background-color", "#EBEBE7");
+          $(".contents button ").css("background-color", "#8F8F87");
+        }
+
+        function rougegorge() {
+
+          $(".boite h1").css("background-color", "#4B898F");
+          $(".boite p").css("background-color", "#B5E3E8");
+          $(".contents button ").css("background-color", "#4B898F");
+        }
+
+        function verdier() {
+
+          $(".boite h1").css("background-color", "#597841");
+          $(".boite p").css("background-color", "#C5E4AD");
+          $(".contents button ").css("background-color", "#597841");
+        }
+
+        function serin() {
+
+          $(".boite h1").css("background-color", "#E5EE3C");
+          $(".boite p").css("background-color", "#E5E995");
+          $(".contents button ").css("background-color", "#E5EE3C");
+        }
+      </script>
+    </p>
+  </div>
+</div>
